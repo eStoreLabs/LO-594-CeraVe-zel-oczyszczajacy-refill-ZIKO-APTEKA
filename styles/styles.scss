@@ -36,13 +36,16 @@ $transition: all 0.3s ease-in-out;
   line-height: 1.25;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 1330px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
   display: flex;
   flex-direction: column;
   gap: $px-L;
+  @media (min-width: $media-breakpoint-lg) {
+    gap: $px-XL;
+  }
 
   ::selection {
     background-color: $color-accent-2;
@@ -240,6 +243,27 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
+    @container es-rc-content (min-width: 992px) {
+      &__right {
+        &__logo {
+          max-width: 22%;
+          right: 7%;
+        }
+        &__textCtn {
+          max-width: 485px;
+          margin-left: 18%;
+        }
+        &__icon {
+          max-width: 90px;
+        }
+        &__title {
+          font-size: 46px;
+        }
+        &__text {
+          font-size: 23px;
+        }
+      }
+    }
   }
 
   .es-features {
@@ -412,6 +436,37 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
+    @container es-rc-content (min-width: 992px) {
+      padding: 70px 48px;
+      &__wrapper {
+        &--top {
+          width: 60%;
+          max-width: 500px;
+        }
+      }
+      &__title {
+        font-size: 36.8px;
+      }
+      &__subtitle {
+        font-size: 26px;
+      }
+      &__points {
+        font-size: 23px;
+      }
+      &__text {
+        font-size: 50.6px;
+      }
+      &__shape {
+        padding: 0px 0px 0px 36px;
+        max-width: 370px;
+        &__text {
+          font-size: 16px;
+          &--number {
+            font-size: 55.2px;
+          }
+        }
+      }
+    }
   }
 
   .es-ingredients {
@@ -475,6 +530,23 @@ $transition: all 0.3s ease-in-out;
         justify-content: flex-end;
         &__item {
           width: 250px;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 992px) {
+      &__title {
+        font-size: 36.8px;
+      }
+      &__list {
+        &__item {
+          width: 30%;
+          max-width: 300px;
+        }
+        &__title {
+          font-size: 23px;
+        }
+        &__text {
+          font-size: 21px;
         }
       }
     }
@@ -559,6 +631,16 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
+    @container es-rc-content (min-width: 992px) {
+      &__title {
+        font-size: 28px;
+      }
+      &__list {
+        &__text {
+          font-size: 23px;
+        }
+      }
+    }
   }
 
   .es-formula-use {
@@ -629,14 +711,16 @@ $transition: all 0.3s ease-in-out;
         font-size: 18px;
       }
     }
-  }
-
-  .es-video {
-    &__iframe {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: 16/9;
-      border: 0;
+    @container es-rc-content (min-width: 992px) {
+      &__name {
+        font-size: 28px;
+      }
+      &__text {
+        font-size: 23px;
+      }
+      &__text-wrapper {
+        width: 67%;
+      }
     }
   }
 
@@ -719,6 +803,26 @@ $transition: all 0.3s ease-in-out;
         text-align: left;
         &--highlight {
           min-width: max-content;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 992px) {
+      &__left {
+        padding: 16px 0 16px 48px;
+      }
+      &__title {
+        font-size: 36.8px;
+      }
+      &__subtitle {
+        font-size: 28px;
+      }
+      &__refill {
+        padding: 16px 24px 16px 0;
+      }
+      &__packs {
+        padding: 16px 48px 16px 24px;
+        &__sizes {
+          font-size: 18.4px;
         }
       }
     }
@@ -843,6 +947,31 @@ $transition: all 0.3s ease-in-out;
       &__item {
         &__image {
           max-width: 140px;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 992px) {
+      .es-section-title {
+        font-size: 36.8px;
+      }
+      &__item {
+        &__text {
+          &-container {
+            margin-block: 48px;
+          }
+          &-step {
+            font-size: 28px;
+          }
+          &-name {
+            font-size: 23px;
+          }
+          &-text {
+            font-size: 21px;
+            text-wrap: balance;
+          }
+        }
+        &__button {
+          font-size: 23px;
         }
       }
     }

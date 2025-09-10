@@ -5,13 +5,18 @@
   line-height: 1.25;
   color: #003058;
   background-color: #ffffff;
-  max-width: 990px;
+  max-width: 1330px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content {
+    gap: 32px;
+  }
 }
 #es-rc #es-rc-content ::-moz-selection {
   background-color: #46d7ac;
@@ -201,6 +206,25 @@
     margin-left: 20%;
   }
 }
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-kv__right__logo {
+    max-width: 22%;
+    right: 7%;
+  }
+  #es-rc #es-rc-content .es-kv__right__textCtn {
+    max-width: 485px;
+    margin-left: 18%;
+  }
+  #es-rc #es-rc-content .es-kv__right__icon {
+    max-width: 90px;
+  }
+  #es-rc #es-rc-content .es-kv__right__title {
+    font-size: 46px;
+  }
+  #es-rc #es-rc-content .es-kv__right__text {
+    font-size: 23px;
+  }
+}
 #es-rc #es-rc-content .es-features {
   background-color: #46d7ac;
   color: #ffffff;
@@ -371,6 +395,37 @@
     margin-top: 48px;
   }
 }
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-features {
+    padding: 70px 48px;
+  }
+  #es-rc #es-rc-content .es-features__wrapper--top {
+    width: 60%;
+    max-width: 500px;
+  }
+  #es-rc #es-rc-content .es-features__title {
+    font-size: 36.8px;
+  }
+  #es-rc #es-rc-content .es-features__subtitle {
+    font-size: 26px;
+  }
+  #es-rc #es-rc-content .es-features__points {
+    font-size: 23px;
+  }
+  #es-rc #es-rc-content .es-features__text {
+    font-size: 50.6px;
+  }
+  #es-rc #es-rc-content .es-features__shape {
+    padding: 0px 0px 0px 36px;
+    max-width: 370px;
+  }
+  #es-rc #es-rc-content .es-features__shape__text {
+    font-size: 16px;
+  }
+  #es-rc #es-rc-content .es-features__shape__text--number {
+    font-size: 55.2px;
+  }
+}
 #es-rc #es-rc-content .es-ingredients {
   position: relative;
   z-index: 1;
@@ -434,6 +489,21 @@
   }
   #es-rc #es-rc-content .es-ingredients__list__item {
     width: 250px;
+  }
+}
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-ingredients__title {
+    font-size: 36.8px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__item {
+    width: 30%;
+    max-width: 300px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__title {
+    font-size: 23px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__text {
+    font-size: 21px;
   }
 }
 #es-rc #es-rc-content .es-benefits__image__container {
@@ -512,6 +582,14 @@
     width: 55%;
   }
 }
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-benefits__title {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-benefits__list__text {
+    font-size: 23px;
+  }
+}
 #es-rc #es-rc-content .es-formula-use ::-moz-selection {
   background-color: #0073ce;
   color: #ffffff;
@@ -585,11 +663,16 @@
     font-size: 18px;
   }
 }
-#es-rc #es-rc-content .es-video__iframe {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16/9;
-  border: 0;
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-formula-use__name {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text {
+    font-size: 23px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text-wrapper {
+    width: 67%;
+  }
 }
 #es-rc #es-rc-content .es-packaging {
   display: flex;
@@ -670,6 +753,26 @@
   #es-rc #es-rc-content .es-packaging__title--highlight {
     min-width: -moz-max-content;
     min-width: max-content;
+  }
+}
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-packaging__left {
+    padding: 16px 0 16px 48px;
+  }
+  #es-rc #es-rc-content .es-packaging__title {
+    font-size: 36.8px;
+  }
+  #es-rc #es-rc-content .es-packaging__subtitle {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-packaging__refill {
+    padding: 16px 24px 16px 0;
+  }
+  #es-rc #es-rc-content .es-packaging__packs {
+    padding: 16px 48px 16px 24px;
+  }
+  #es-rc #es-rc-content .es-packaging__packs__sizes {
+    font-size: 18.4px;
   }
 }
 #es-rc #es-rc-content .es-cross__content {
@@ -781,6 +884,27 @@
   }
   #es-rc #es-rc-content .es-cross__item__image {
     max-width: 140px;
+  }
+}
+@container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-cross .es-section-title {
+    font-size: 36.8px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-container {
+    margin-block: 48px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-step {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-name {
+    font-size: 23px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-text {
+    font-size: 21px;
+    text-wrap: balance;
+  }
+  #es-rc #es-rc-content .es-cross__item__button {
+    font-size: 23px;
   }
 }
 #es-rc #es-rc-content .es-disclaimer {
