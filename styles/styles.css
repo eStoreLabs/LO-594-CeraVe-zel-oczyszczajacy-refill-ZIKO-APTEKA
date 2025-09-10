@@ -225,6 +225,21 @@
     font-size: 23px;
   }
 }
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-kv__right__textCtn {
+    max-width: 550px;
+    margin-left: 22%;
+  }
+  #es-rc #es-rc-content .es-kv__right__icon {
+    max-width: 110px;
+  }
+  #es-rc #es-rc-content .es-kv__right__title {
+    font-size: 50px;
+  }
+  #es-rc #es-rc-content .es-kv__right__text {
+    font-size: 25px;
+  }
+}
 #es-rc #es-rc-content .es-features {
   background-color: #46d7ac;
   color: #ffffff;
@@ -426,6 +441,43 @@
     font-size: 55.2px;
   }
 }
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-features__wrapper--top {
+    width: 63%;
+    max-width: 550px;
+    text-wrap: balance;
+  }
+  #es-rc #es-rc-content .es-features__title {
+    font-size: 40px;
+    text-wrap: unset;
+    max-width: 80%;
+  }
+  #es-rc #es-rc-content .es-features__subtitle {
+    font-size: 28px;
+  }
+  #es-rc #es-rc-content .es-features__points {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-features__text {
+    font-size: 55px;
+    max-width: 80%;
+  }
+  #es-rc #es-rc-content .es-features__shape {
+    padding: 0px 0px 0px 43px;
+    max-width: 388px;
+  }
+  #es-rc #es-rc-content .es-features__shape__text {
+    font-size: 17px;
+  }
+  #es-rc #es-rc-content .es-features__shape__text--number {
+    font-size: 60px;
+  }
+  #es-rc #es-rc-content .es-features__bg__image {
+    min-height: unset;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 #es-rc #es-rc-content .es-ingredients {
   position: relative;
   z-index: 1;
@@ -492,18 +544,51 @@
   }
 }
 @container es-rc-content (min-width: 992px) {
+  #es-rc #es-rc-content .es-ingredients__bubbles {
+    max-width: 330px;
+  }
+  #es-rc #es-rc-content .es-ingredients__content {
+    max-width: 82%;
+  }
   #es-rc #es-rc-content .es-ingredients__title {
     font-size: 36.8px;
   }
+  #es-rc #es-rc-content .es-ingredients__list {
+    justify-content: center;
+  }
   #es-rc #es-rc-content .es-ingredients__list__item {
     width: 30%;
-    max-width: 300px;
+    max-width: 275px;
   }
   #es-rc #es-rc-content .es-ingredients__list__title {
     font-size: 23px;
   }
   #es-rc #es-rc-content .es-ingredients__list__text {
     font-size: 21px;
+  }
+}
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-ingredients__bubbles {
+    max-width: 390px;
+  }
+  #es-rc #es-rc-content .es-ingredients__content {
+    max-width: 82%;
+  }
+  #es-rc #es-rc-content .es-ingredients__title {
+    font-size: 40px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list {
+    margin-top: 60px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__item {
+    width: 30%;
+    max-width: 297px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__title {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-ingredients__list__text {
+    font-size: 23px;
   }
 }
 #es-rc #es-rc-content .es-benefits__image__container {
@@ -590,6 +675,27 @@
     font-size: 23px;
   }
 }
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-benefits {
+    min-height: 490px;
+  }
+  #es-rc #es-rc-content .es-benefits__title {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-benefits__list__text {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-benefits__image {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+  }
+  #es-rc #es-rc-content .es-benefits__image__container {
+    height: 100%;
+  }
+}
 #es-rc #es-rc-content .es-formula-use ::-moz-selection {
   background-color: #0073ce;
   color: #ffffff;
@@ -674,6 +780,17 @@
     width: 67%;
   }
 }
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-formula-use__name {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text-wrapper {
+    width: 65%;
+  }
+}
 #es-rc #es-rc-content .es-packaging {
   display: flex;
   flex-direction: column;
@@ -742,6 +859,7 @@
 @container es-rc-content (min-width: 768px) {
   #es-rc #es-rc-content .es-packaging {
     flex-direction: row;
+    justify-content: space-between;
   }
   #es-rc #es-rc-content .es-packaging__left {
     justify-content: center;
@@ -770,9 +888,31 @@
   }
   #es-rc #es-rc-content .es-packaging__packs {
     padding: 16px 48px 16px 24px;
+    height: 100%;
   }
   #es-rc #es-rc-content .es-packaging__packs__sizes {
     font-size: 18.4px;
+  }
+}
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-packaging__left {
+    padding: 16px 0 16px 80px;
+    width: 40%;
+  }
+  #es-rc #es-rc-content .es-packaging__title {
+    font-size: 40px;
+  }
+  #es-rc #es-rc-content .es-packaging__subtitle {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-packaging__refill {
+    padding: 20px 32px 20px 0;
+  }
+  #es-rc #es-rc-content .es-packaging__packs {
+    padding: 20px 52px 20px 32px;
+  }
+  #es-rc #es-rc-content .es-packaging__packs__sizes {
+    font-size: 20px;
   }
 }
 #es-rc #es-rc-content .es-cross__content {
@@ -809,6 +949,9 @@
   background-color: #0073ce;
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%);
   z-index: -1;
+}
+#es-rc #es-rc-content .es-cross__item__text-description {
+  line-height: 1.4;
 }
 #es-rc #es-rc-content .es-cross__item__text-container {
   display: flex;
@@ -854,9 +997,11 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 4px;
+    justify-content: center;
   }
   #es-rc #es-rc-content .es-cross__item {
     flex: 1 1 0;
+    max-width: unset;
   }
   #es-rc #es-rc-content .es-cross__item__image {
     max-height: 92%;
@@ -905,6 +1050,30 @@
   }
   #es-rc #es-rc-content .es-cross__item__button {
     font-size: 23px;
+  }
+}
+@container es-rc-content (min-width: 1200px) {
+  #es-rc #es-rc-content .es-cross .es-section-title {
+    font-size: 36.8px;
+  }
+  #es-rc #es-rc-content .es-cross__item__image {
+    max-width: unset;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-container {
+    margin-block: 48px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-step {
+    font-size: 30px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-name {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-text {
+    font-size: 23px;
+    text-wrap: balance;
+  }
+  #es-rc #es-rc-content .es-cross__item__button {
+    font-size: 25px;
   }
 }
 #es-rc #es-rc-content .es-disclaimer {
